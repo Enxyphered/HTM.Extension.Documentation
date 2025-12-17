@@ -100,15 +100,15 @@ This function may not work for proeprties not following our standard for configu
 
 > If the user exists<br/>
 > If the user has a role<br/>
-> If user role is within the comma seperated list ``config.OcEntUrl``<br/>
+> If user role is within the comma seperated list ``config.RolesAllowedToRestartServiceHost``<br/>
 
 ### OcEntPay
-``OcEntPay()`` takes no argument as a parameter and will do the following using the OCENT api at url ``config.OcEntDiscountObjectNumber``:
+``OcEntPay()`` takes no argument as a parameter and will do the following using the OCENT api at url ``config.OcEntUrl``:
 
 > Send a get request to ``getallaccounts`` endpoint of the OCENT API.
 Retreieves a list of accounts you can post to and show the user to select from this list.
 
-> Post the amount to the API then apply an equivilant amount of discount to the bill based on ``config.OcEntDiscountObjectNumber``
+> Post the amount to the API then apply an equivilant amount of discount to the bill using disocunt ``config.OcEntDiscountObjectNumber``
 
 ### event OpsDscVoidPreviewEvent
 
